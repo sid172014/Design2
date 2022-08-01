@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.headingPart{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/backgroundImage.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.innerContainer{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0,23,149,0.6) 0%, rgba(0,23,149,0.6)  25% , rgba(0,23,149,0.6) 50%,rgba(0,23,149,0.6) 75%,rgba(243, 245, 39, 0.2) 100%);
+    display: flex;
+    align-items: center;
+}
+.row span{
+    font-family: "Roboto";
+}
+.row .line{
+    background-color: white;
+}
+.row h1{
+    font-family: "Sarabun";
+    font-size: 5rem;
+    color: white;
+}
+
+/* ---- Media Queries ------*/
+@media (max-width: 900px) {
+    
+}
+
+
+
+/* Importing Fonts */
+@font-face {
+    font-family: "Sarabun";
+    src: url(../fonts/Sarabun-Bold.ttf);
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Light.ttf);
+}
