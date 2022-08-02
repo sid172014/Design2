@@ -203,7 +203,7 @@ body {
 
 #anotherButton{
     background-color: #6E85B7;
-    width: 30%;
+    width: 35%;
     height: 6%;
     display: flex;
     align-items: center;
@@ -211,6 +211,7 @@ body {
     position: absolute;
     left: 9%;
     border: solid 1px white;
+    margin-top: 15px;
 }
 #anotherButton:hover button{
     color: black;
