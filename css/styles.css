@@ -2,7 +2,9 @@
     padding: 0;
     margin: 0;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .headingPart{
     width: 100%;
     height: 100vh;
@@ -18,7 +20,7 @@
     align-items: center;
 }
 .row span{
-    font-family: "Roboto";
+    font-family: "Sarabun";
 }
 .row .line{
     background-color: white;
@@ -27,14 +29,186 @@
     font-family: "Sarabun";
     font-size: 5rem;
     color: white;
+    transition: 2s ease;
 }
 
-/* ---- Media Queries ------*/
-@media (max-width: 900px) {
+
+.row div{
+    border: none;
+}
+.row .button{
+    background-color: white;
+    color: #6E85B7;
+    padding: 15px 10px 15px 10px;
+    width: 15%;
+    border: solid 1px white;
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 2%;
+    float: left;
+    transition: 1s ease;
+}
+
+.row a{
+    margin-left: 3%;
+    position: absolute;
+    top: 27%;
+    width: 55px;
+    height: 55px;
+    background-color: transparent   ;
+    border-radius: 50% ;
+    border: solid 1px white;
+    color: white;
+    text-align: center;
+    transition: 1s ease;
+}
+.row a div{
+    margin-top: 25%;
+}
+.row div .button:hover{
+
+    color: black;
+    animation: animate 2s ease;
+}
+@keyframes animate {
+    0%{
+        background-color: #C4D7E0;
+    }
+    50%{
+        background-color: #6e85b7;
+    }
+    100%{
+        background-image: linear-gradient(to right,#F8F9D7,#6E85B7); 
+    }
+}
+
+
+
+/* ------- Jumbo Section -----------*/
+.jumbo{
+    background-color:white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.jumbo .row{
+    min-height: 80vh;
     
 }
+.jumbo .row img:nth-child(1){
+    height: 100%;
+    width: 95%;
+}
+.jumbo .row img:nth-child(2){
+    position: absolute;
+    top: 0px;
+    width: 400px;
+    height: 230px;
+    left:0px;
+    border: 15px solid white;
+}
+.jumbo .row img:nth-child(3){
+    position: absolute;
+    top: 0px;
+    right:35px;
+    width: 365px;
+    height: 230px;
+    border: 15px solid white;
+}   
 
+.jumbo .row h2{
+    font-size: 8vh;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-right: 10px;
+    font-family: "Sarabun";
+    color: darkblue;
+    transition: 4s ease;
+}
+.jumbo .row p{
+    font-size: small;
+    color: #64676c;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 10px;
+    text-align: justify;
+    text-justify: inter-word;
 
+}
+.jumbo .row ul{
+    font-size: small;
+    color: #64676c;
+    padding-left: 62px;
+    padding-right: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.text div{
+    padding-left: 50px;
+    padding-right: 10px;
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#bold{
+    padding-left: 10px;
+    color: black;
+    font-weight:bold;
+}
+#light{
+    font-size: small;
+    color: #64676c;
+    width: 100px;
+    position: absolute;
+    bottom: -12px;
+    left: 80px;
+}
+#icons{
+    width: 30px;
+    height: 30px;
+} 
+/* ---- Media Queries ------*/
+@media (max-width:900px) {
+   .row .button{
+        width: 35%;
+        margin-top: 5%;
+   }
+   .row a{
+    margin-left: 7%;
+   }
+   .jumbo .row img:nth-child(3){
+    display: none;
+   }
+   .jumbo .row img:nth-child(2){
+    display: none;
+   }
+   .jumbo .row img:nth-child(1){
+    padding-left: 18px;
+   }
+   .jumbo .row h2{
+    font-size: 35px;
+   }
+   .jumbo .row p{
+    padding-left: 18px;
+    padding-right: 18px;
+   }
+   .jumbo .row ul{
+    padding-left: 30px;
+    padding-right: 18px;
+   }
+   .text div{
+    padding-left: 10px;
+    
+    }
+   #icons{
+    width: 50px;
+    height: 30px;
+   } 
+   #light{
+    left: 60px;
+   }
+}  
 
 /* Importing Fonts */
 @font-face {
