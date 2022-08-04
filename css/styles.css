@@ -412,6 +412,10 @@ body {
     .events{
         min-height: 230vh;
     }
+    .events .tab img{
+        width: 100%;
+        height: 300px;
+    }
 }  
 
 /* Importing Fonts */
